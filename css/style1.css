@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --main-color:#2B71C3;
+    --main-color-alt:#0096c7;
+    
+    --main-transition:0.3s;
+    --section-color: #F4F4F4;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background-color: #fff;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu 
+{
+    margin: 0 0 0 170px !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: auto !important;
+    left: auto !important;
+}
+
+
+.img-nav
+{
+    width: 115px;
+    height: 50px;
+   
+}
+
+.container a
+{
+    color: var(--main-color);
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-nav > ul > li > a::before
+{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color-alt);
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    right: -100%;
+    transition: var(--main-transition);
+   
+}
+
+.navbar-brand:hover
+{
+  color: var(--main-color-alt);
+}
+
+.navbar-nav > ul > li > a:hover
+{
+    color: var(--main-color-alt);
+}
+
+.navbar-nav > ul > li > a:hover::before
+{
+    right: 0;
+ 
+}
+
+
+
+@media (max-width: 991px)
+{
+
+    
+    
+    .icon-ul
+    {
+        flex-direction: row;
+    }
+    .sign-img
+    {
+        width: 400px;
+        height: 400px ;
+        
+    }
+    .dropdown-menu 
+  {
+    margin: 0 0 0 150px !important;
+  }
+    .head-container
+    {
+        margin-left: 100px;
+    }
+    .head
+    {
+        font-size: 50px;
+    }
+    .head2
+    {
+        font-size: 35px ;
+        margin-right: 50px ;
+        
+    }
+    .sign-in
+    {
+        margin-right: 100px;
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .sign-img
+    {
+        width: 400px !important;
+        height: 400px !important;
+        
+    }
+
+    .dropdown-menu 
+    {
+      margin: 0 !important;
+    }
+   
+
+    .head
+    {
+        font-size: 50px !important;
+    }
+    .head2
+    {
+        font-size: 35px !important;
+        margin-right: 50px !important;
+        
+    }
+    .sign-in
+    {
+        margin-right: 100px;
+    }
+    ul
+    {
+        flex-direction: column;
+    }
+    .icon-ul
+    {
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 767px)
+{
+  
+
+    .sign-img
+    {
+        display: none;
+    }
+    .head-container
+    {
+        
+        margin-bottom: -102px !important;
+        
+    }
+
+    .dropdown-menu 
+    {
+      margin: 0 !important;
+    }
+
+    .sign-in
+    {
+        margin-top: -50px;
+    }
+    .head
+    {
+        font-size: 35px;
+    }
+    .head2
+    {
+        font-size: 20px;
+        margin-right: 50px;
+        font-weight: 400;
+    }
+    .sign-in
+    {
+        margin-right: 100px;
+    }
+    ul
+    {
+        flex-direction: column;
+    }
+    .icon-ul
+    {
+        flex-direction: row;
+    }
+}
+
+.icon-ul i
+{
+    color: var(--main-color);
+}
+
+.be-small
+{
+    font-size: 14px;
+}
+
+.brdr-caption
+{
+    color: var(--main-color);
+    background-color: var(--main-color);
+    height: 2px;
+    width: 100px;
+}
+
+.head, .head2
+{
+    font-size: 80px;
+    
+    color: var(--main-color);
+    font-weight: bold;
+    
+}
+
+.head2
+{
+    font-size: 60px;
+    
+    margin-right: 150px;
+}
+
+.sign-img
+{
+    width: 689px;
+    height: 689px;
+    transform: rotate(7.47deg) !important;
+}
+
+.main-bg
+{
+    background-color: var(--main-color);
+}
+
+.main-color
+{
+    color: var(--main-color);
+}
+
+.head-container
+{
+    margin-bottom: 50px;
+}
+
+.sign-in .input1
+{
+    width: 424px;
+    height: 70px;
+    background: #FFFFFF;
+    border: 2px solid #2B71C3;
+    border-radius: 20px;
+}
+
+.sign-in .input1::placeholder
+{
+    color: var(--main-color);
+}
+
+.sign-in button
+{
+    width: 424px;
+    height: 70px;
+    background-color: var(--main-color);
+    border: 2px solid #2B71C3;
+    border-radius: 20px;
+    color: white;
+}

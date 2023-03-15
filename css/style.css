@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --main-color:#fff;
+    --main-color-alt:#f5f5f5;
+    --sub-color:#2B71C3;
+    --main-transition:0.3s;
+    --section-color: #F4F4F4;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background-color: #fff;
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.img-nav
+{
+    width: 115px;
+    height: 40px;
+   
+}
+
+.container a
+{
+    color: var(--main-color);
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-nav > ul > li > a::before
+{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color-alt);
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    right: -100%;
+    transition: var(--main-transition);
+   
+}
+ 
+.dropdown-menu 
+{
+    margin: 0 0 0 170px !important;
+}
+
+.dropdown-menu a
+{
+    color: var(--sub-color);
+}
+
+.navbar-nav > ul > li > a:hover
+{
+    color: var(--main-color-alt);
+}
+
+.navbar-nav > ul > li > a:hover::before
+{
+    right: 0;
+ 
+}
+
+@media (max-width: 1224px)
+{
+    .plan-sec
+    {
+        width: 371px !important;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .last
+    {
+     width: 959px !important;
+     height: 366px !important;
+    }
+
+    .plan-holder
+    {
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+    }
+
+    .plan-sec
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .sub-img
+{
+    width: 158px !important;
+    height: auto !important;
+    margin: 0 10px !important;
+}
+
+.plan-holder
+    {
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+    }
+
+.plan-sec
+{
+    display: flex;
+    flex-direction: column;
+}
+
+    ul
+    {
+        flex-direction: column;
+    }
+
+    .dropdown-menu 
+    {
+      margin: 0 !important;
+    }
+
+    .icon-ul
+    {
+        flex-direction: row;
+    }
+    footer ul
+    {
+        flex-direction: row;
+    }
+    .footer-info p
+    {
+        margin: 0;
+        font-size: 14px;
+    }
+    .footer-contact p
+    {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .footer-contact li
+    {
+        font-size: 25px;
+        
+    }
+
+    footer
+   {
+    height: 100vh;
+    margin-top: 150px;
+   }
+   
+   .last
+   {
+    width: 959px !important;
+    height: 366px !important;
+   }
+    
+   
+}
+
+@media (min-width: 768px) and (max-width: 980px)
+{
+    .plan-holder
+    {
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+    }
+
+    .plan-sec
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .last
+    {
+     width: 650px !important;
+     height: 500px !important;
+    }
+    .who-use .who-img
+{
+    display: none;
+
+}
+
+.sub-text
+{
+    width: 100% !important;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 768px)
+{
+
+    .dropdown-menu 
+    {
+      margin: 0 !important;
+    }
+
+.who-use img
+{
+    display: none;
+
+}
+
+
+.who-use .info2
+{
+    font-size: 20px;
+    line-height: 32px;
+}
+.who-use h2
+{
+    font-size: 33px;
+    line-height: 33px;
+}
+.who-use button
+{
+    margin-bottom: 50px;
+}
+.plan-holder
+{
+   display: flex;
+   align-items: center;
+   justify-items: end;
+   flex-direction: column;
+}
+.footer-info
+{
+    display: none;
+}
+footer
+{
+ height: 100vh;
+ margin-top: 50px;
+}
+.copy-right
+{
+    padding-bottom: 20px;
+}
+.copy-right i
+{
+    
+    font-size: 16px !important;
+}
+.copy-right p
+{
+    font-size: 16px !important;
+}
+.last
+{
+ width: 650px !important;
+ height: 500px !important;
+}
+.link i,.link span
+{
+    font-size: 16px !important;
+}
+
+
+}
+
+@media (max-width: 550px)
+{
+    .last
+    {
+        width: 500px !important;
+        height: 650px !important;
+    }
+    .hi-mohasba .heading
+{
+    font-size: 50px !important;
+    font-weight: bold !important;
+}
+
+.copy-right p {
+    font-size: 10px !important;
+}
+
+}
+
+
+
+.be-small
+{
+    font-size: 14px;
+}
+
+.brdr-caption
+{
+    color: var(--main-color);
+    background-color: var(--main-color);
+    height: 2px;
+    width: 100px;
+}
+
+nav
+{
+    background-color: var(--sub-color) !important;
+    color: white !important;
+}
+
+.hi-mohasba
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/pattern.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--sub-color);
+   
+    
+}
+
+.hi-mohasba2
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/noot\ 1.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--sub-color);
+    
+}
+
+.hi-mohasba3
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/WhatsApp\ Image\ 2023-02-26\ at\ 17.31\ 1.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--sub-color);
+    
+}
+
+.hi-mohasba4
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Untitled-1\ 1.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--sub-color);
+    
+}
+
+.hi-mohasba .heading
+{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.hi-mohasba2 h3
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+.hi-mohasba3 h3
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+
+.hi-mohasba button
+{
+    color: var(--sub-color);
+    font-weight: bold;
+    padding: 5px 35px;
+    margin: 30px 0;
+}
+
+.sub-img
+{
+    width: 226px;
+    height: 144px;
+}
+
+.sub2-img
+{
+    width: 226px;
+    height: 195px;
+}
+
+.busi-img
+{
+    width: 300px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+.busi-sec
+{
+    background: linear-gradient(149.32deg, #16D9E3 -28.31%, #2B71C3 96.39%);
+    border-radius: 15px;
+    
+}
+
+.main-bg
+{
+    background-color: var(--sub-color);
+}
+
+.main-color
+{
+    color: var(--sub-color);
+}
+
+.who-use
+{
+    background: linear-gradient(149.32deg, #16D9E3 -28.31%, #2B71C3 96.39%);
+    
+}
+
+.who-use h2
+{
+    font-size: 43px;
+    line-height: 43px;
+}
+
+.who-use img
+{
+    width: 413px;
+    height: auto;
+
+}
+
+.who-use .info1
+{
+    font-size: 35px;
+    line-height: 43px;
+}
+
+.who-use .info2
+{
+    font-size: 25px;
+    line-height: 42px;
+}
+
+.plan h2
+{
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 43px;
+}
+
+.edit-p
+{
+    font-size: 23px;
+    line-height: 43px;
+}
+
+.plan-sec
+{
+    width: 372px;
+    height: auto;
+    background: linear-gradient(149.32deg, #16D9E3 -28.31%, #2B71C3 96.39%);
+    border-radius: 15px;
+    margin: 0 15px 30px 15px;
+    
+}
+
+.bg-silver
+{
+    background-color: silver;
+}
+.bg-bronze
+{
+    background-color: #CD7F32;
+}
+.bg-gold
+{
+    background-color: gold;
+}
+
+.bg-silver:hover, .bg-bronze:hover , .bg-gold:hover
+{
+   background-color:#2B71C3 ;
+   border: 1px white solid;
+}
+
+footer
+{
+    width: 100%;
+    height: auto;
+    background-image: url("../images/pattern.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--sub-color);
+    margin-top: 300px;
+}
+
+.img-footer
+{
+    width: 270px;
+    height: 90px;
+}
+
+footer p
+{
+    font-size: 25px;
+    line-height: 42px;
+    color: white;
+    font-weight: 700;
+}
+
+footer li
+{
+    color: white;
+    margin: 0 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.mzaya h3
+{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--sub-color);
+}
+
+.mzaya p
+{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.last
+{
+    width: 1312px;
+    height: 355px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last p
+{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 50px;
+}
